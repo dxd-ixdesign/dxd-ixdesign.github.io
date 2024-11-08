@@ -355,7 +355,7 @@
         stopAudioVisualization();   // 응답 읽기 종료 시 시각화 중단
         resetVisualizer();           // 시각화 종료 후 원 상태로 복귀
       };
-    }
+    } */
 
     // 음성 입력에 따라 시각화 애니메이션 조절
     function startAudioVisualization() {
@@ -431,7 +431,7 @@
     }
 
     // 마이크 권한 확인
-    navigator.mediaDevices.getUserMedia({ audio: true })
+    /*navigator.mediaDevices.getUserMedia({ audio: true })
       .then(function (stream) {
         console.log("마이크 접근 허용됨");
       })
