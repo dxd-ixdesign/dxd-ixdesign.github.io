@@ -157,7 +157,7 @@
 
 
 
-/*
+
     // ----- 현재 브라우저에서 API 사용이 유효한가를 검증
     function availabilityFunc() {
     //현재 SpeechRecognition을 지원하는 크롬 버전과 webkit 형태로 제공되는 버전이 있으므로 둘 중 해당하는 생성자를 호출한다.
@@ -203,12 +203,12 @@
     }
 
     window.addEventListener("load", availabilityFunc);
-*/
 
 
 
 
 
+/*
     // 음성 입력 처리
     function startVoiceRecognition() {
       if ('webkitSpeechRecognition' in window) {
@@ -248,6 +248,7 @@
         alert('음성 인식은 이 브라우저에서 지원되지 않습니다. 텍스트로 입력해 주세요.');
       }
     }
+      */
 
     // 텍스트 입력 처리
     sendBtn.addEventListener("click", () => {
