@@ -4,7 +4,7 @@ const searchConsole = document.getElementById("search_console");
 function availabilityFunc() {
   //현재 SpeechRecognition을 지원하는 크롬 버전과 webkit 형태로 제공되는 버전이 있으므로 둘 중 해당하는 생성자를 호출한다.
   recognition = new webkitSpeechRecognition() || new SpeechRecognition();
-  recognition.lang = "ko"; // 음성인식에 사용되고 반환될 언어를 설정한다.
+  recognition.lang = "ko-KR"; // 음성인식에 사용되고 반환될 언어를 설정한다.
   recognition.maxAlternatives = 5; //음성 인식결과를 5개 까지 보여준다.
 
   if (!recognition) {
