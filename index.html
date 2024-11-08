@@ -191,6 +191,7 @@
 
         // ⏺️클릭 시 음성인식을 시작한다.
         recognition.addEventListener("speechstart", () => {
+          recognition.stop();
             //console.log("인식");
             //startAudioVisualization();  // 음성 입력 시작 시 시각화 시작
         });
