@@ -206,6 +206,7 @@
         recognition.addEventListener("speechstart", () => {
             //console.log("인식");
             //startAudioVisualization();  // 음성 입력 시작 시 시각화 시작
+            document.getElementById('console2').textContent = '음성인식 시작...';
         });
 
         //음성인식이 끝까지 이루어지면 중단된다.
