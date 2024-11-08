@@ -260,14 +260,17 @@
 
         recognition.start();
         recognition.onstart = () => {
-          startAudioVisualization();  // 음성 입력 시작 시 시각화 시작
+          document.getElementById('console2').textContent = '음성인식 시작...';
+          //startAudioVisualization();  // 음성 입력 시작 시 시각화 시작
         };
         recognition.onend = () => {
-          stopAudioVisualization();   // 음성 입력 종료 시 시각화 중단
+          document.getElementById('console2').textContent = '음성인식 종료...';
+          //stopAudioVisualization();   // 음성 입력 종료 시 시각화 중단
         };
         recognition.onresult = async (event) => {
-          const transcript = event.results[0][0].transcript;
-          handleUserInput(transcript);
+          document.getElementById('console').textContent = e.results[0][0].transcript;
+          //const transcript = event.results[0][0].transcript;
+          //handleUserInput(transcript);
         };
 
       } else if (annyang) {
